@@ -54,7 +54,17 @@ public:
   // Post: Current position is updated to next position.
   //       item is a copy of element at current position.
 
+  void print();
 private:
+
+    struct Node
+    {
+        Node* next = nullptr;
+        Node* pre = nullptr;
+        T data;
+    };
+    Node* head;
+    Node* tail;
   int length;
 
   // Need to create the head... and a node definition

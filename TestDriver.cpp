@@ -10,7 +10,7 @@ void PrintList(ofstream& outFile, UnsortedList<int>& list);
 
 int main()
 {
-	ifstream inFile;       // file containing operations
+	/*ifstream inFile;       // file containing operations
 	ofstream outFile;      // file containing output
 	string inFileName;     // input file external name
 	string outFileName;    // output file external name
@@ -110,7 +110,18 @@ int main()
 
 	cout << "Quit" << endl << "Testing completed." << endl;
 	inFile.close();
-	outFile.close();
+	outFile.close();*/
+
+    UnsortedList<int> l;
+    l.AddItem((5));
+    l.AddItem((7));
+    l.AddItem((2));
+    l.AddItem((3));
+    l.print();
+    l.DeleteItem(3);
+    l.DeleteItem(5);
+    l.print();
+
 	return 0;
 };
 
